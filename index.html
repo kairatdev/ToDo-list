@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://w7.pngwing.com/pngs/972/511/png-transparent-todo-sketch-note-list-tasks-thumbnail.png);
+    display: flex;
+    justify-content: space-between;
+    padding: 250px;
+}
+
+.content {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1ee3e3;
+    border-radius: 8px ;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#todotext {
+    width: 400px;
+    padding: 8px;
+    margin-right: 8px;
+    border: 1px solid #090a0a;
+    border-radius: 4px;
+}
+
+button {
+    
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #3498db;
+    color: #0b3094;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+</style>
+<body>
+    <div class="content">
+        <ol id="text"></ol>
+        <input type="text" id="todotext">
+        <button   onclick="createtodo()" >lINK</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
